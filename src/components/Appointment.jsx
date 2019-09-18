@@ -21,8 +21,7 @@ class Appointment extends Component {
 
   handleChange = e => {
     this.setState({
-      ...this.state.data,
-      data: { [e.target.name]: e.target.value }
+      data: { ...this.state.data,  [e.target.name]: e.target.value}
     });
   };
 
